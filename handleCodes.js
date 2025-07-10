@@ -32,10 +32,10 @@ function handleCodes(codes) {
   validList.sort();
 
   const result = {
-    total: codes.length,
-    valid: validList.length,
-    invalid: codes.length - validList.length,
-    codes: validList
+    totalCodes: codes.length,
+    validCodes: validList.length,
+    invalidCodes: codes.length - validList.length,
+    normalizedValidCodes: validList
   };
 
   return result;
